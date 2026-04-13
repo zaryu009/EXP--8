@@ -3,7 +3,7 @@ import axios from "axios";
 const isAuthRoute = (url = "") => url.includes("/auth/login");
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: "https://exp-8-mxc4.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
